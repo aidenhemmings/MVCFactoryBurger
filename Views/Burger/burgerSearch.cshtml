@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MVCFactoryBurger.Models.BurgerContext>
+
+@{
+    ViewData["Title"] = "burgerSearch";
+}
+
+<h1>Search Results</h1>
+
+
+<h3>@ViewBag.BurgerType</h3>
+<p><strong>Bun:</strong> @ViewBag.Burger.getBun()</p>
+<p><strong>Patty:</strong> @ViewBag.Burger.getPatty()</p>
+<p><strong>Condiments:</strong> @ViewBag.Burger.getCondiments()</p>
+
